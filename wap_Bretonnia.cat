@@ -947,6 +947,7 @@
         <selectionEntry id="68f6-9157-f1f2-3a6e" name="Knight Errant" hidden="false" collective="true" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09c9-d6c0-b623-2e79" type="min"/>
+            <constraint field="selections" scope="parent" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="errant-max-15" type="max"/>
           </constraints>
           <profiles>
             <profile id="bcfc-8b13-c2dc-5be4" name="Knight Errant" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -966,7 +967,7 @@
           </profiles>
           <rules>
             <rule id="ec8d-5c97-75f1-1e4f" name="Impetuous" hidden="false">
-              <description>After charges have been declared, if any unit containing one or more models with the Impetuous special rule did not declare a charge but are within charge range of an enemy, then they must take a Leadership test to restrain from charging. If this test is failed, the unit must declare a charge. If the test is passed, it may move normally. In addition, whenever a unit of Knights Errant charge, they have Immunity (Psychology) and may re-roll one of their charge distance dice.</description>
+              <description>A unit containing one or more models with this special rule follows the rules for Berserk Rage from Frenzy. If the test is passed, it may move normally. In addition, whenever a unit of Knights Errant charges, they have the Swiftstride special rule.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -975,7 +976,7 @@
             <infoLink name="The Blessing of the Lady" id="ca28-2478-dca0-130d" hidden="false" type="profile" targetId="3bc4-c71a-60d2-31c9"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="21"/>
+            <cost name="pts" typeId="points" value="19"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="15. Vows" hidden="false" id="2984-f792-f8f7-7bc2" type="selectionEntryGroup" targetId="8d94-23ac-6a23-d05f">
@@ -3332,8 +3333,7 @@ Grail Reliquae follow all the rules for Shrines. Only once all the Grail Pilgrim
     </selectionEntry>
     <selectionEntry id="db9c-7107-2d6b-5de6" name="Special Characters" hidden="false" collective="false" import="true" type="unit" sortIndex="2.5" subType="unit-group">
       <categoryLinks>
-        <categoryLink id="4646-f40e-3ab5-90aa" name="Lords" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="caef-b52f-51e4-766c" name="Characters" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+        <categoryLink id="4646-f40e-3ab5-90aa" name="Characters" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9510-23bc-9707-b8c6" name="Character" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
