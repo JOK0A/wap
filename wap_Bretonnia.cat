@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d029-4882-a7f6-f55e" name="Bretonnia WAP 1.61" revision="11" battleScribeVersion="2.03" authorName="skalfmarteaunoir" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="true" gameSystemId="bdf8-b76e-2d7b-d47d" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d029-4882-a7f6-f55e" name="Bretonnia WAP 1.61" revision="11" battleScribeVersion="2.03" authorName="skalfmarteaunoir" authorContact="Contact me on the Warhammer Armies Project Discord (1st link) or on the BSData Developers Discord (2nd link)" authorUrl="https://discordapp.com/invite/AaNyj9s" library="false" gameSystemId="bdf8-b76e-2d7b-d47d" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <profileTypes>
     <profileType id="5706-c82a-69e3-ce8a" name="Virtue of the Chivalric Knight">
       <characteristicTypes>
@@ -13,6 +13,144 @@
     </profileType>
   </profileTypes>
   <selectionEntries>
+    <selectionEntry id="2d95-1c46-a90d-7b11" name="Lords" hidden="false" collective="false" import="true" type="model" sortIndex="0.5">
+      <infoLinks>
+        <infoLink id="aa10-1999-3101-1001" name="Lance Formation" hidden="false" targetId="ad7f-7d06-8101-283e" type="rule"/>
+        <infoLink id="aa10-1999-3101-1002" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+        <infoLink id="aa10-1999-3101-1003" name="The Blessing of the Lady" hidden="false" type="profile" targetId="3bc4-c71a-60d2-31c9"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d0b1-35af-3205-7410" name="Characters" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+        <categoryLink id="aa10-1999-3101-1004" name="Infantry" hidden="false" targetId="22c9-1606-58f8-2e60" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1005" name="X Great Weapon" hidden="false" targetId="abcc-4aa7-4989-7189" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1006" name="X Heavy Lance" hidden="false" targetId="b906-254a-7949-9e08" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1007" name="X Polearm" hidden="false" targetId="0b0c-acf4-8a6a-dd72" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1008" name="Z Heavy Armour" hidden="false" targetId="f667-6e97-ec08-38ea" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1009" name="Z Shield" hidden="false" targetId="0210-637d-ff12-a760" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1010" name="Z Barding" hidden="false" targetId="e650-a901-f069-ca88" primary="false"/>
+        <categoryLink id="aa10-1999-3101-1011" name="Z Armour" hidden="false" targetId="387c-2b7c-0a30-7305" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6f84-82a4-72ac-9f31" name="5. Character Selection" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="d9b8-2b46-8daf-0271"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a7e4-e124-fd5c-1d40"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="aa10-1999-3101-1101" name="Baron" hidden="false" collective="false" import="true" type="model" sortIndex="1">
+              <profiles>
+                <profile id="aa10-1999-3101-1102" name="Baron" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model" noindex="true">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">6</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">6</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">4</characteristic>
+                    <characteristic name="Ld" typeId="a199-f10b-a038-5730">9</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character, Human)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs><cost name="pts" typeId="points" value="100"/></costs>
+            </selectionEntry>
+            <selectionEntry id="aa10-1999-3101-1103" name="Paladin" hidden="false" collective="false" import="true" type="model" sortIndex="2">
+              <profiles>
+                <profile id="aa10-1999-3101-1104" name="Paladin" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model" noindex="true">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">5</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">5</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">4</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">4</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">5</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">3</characteristic>
+                    <characteristic name="Ld" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character, Human)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs><cost name="pts" typeId="points" value="60"/></costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="10. Character Options" hidden="false" id="aa10-1999-3101-1201" type="selectionEntryGroup" targetId="35f1-2fc8-9817-3171">
+          <entryLinks>
+            <entryLink import="true" name="Army Battle Standard" hidden="false" id="aa10-1999-3101-1202" type="selectionEntry" targetId="9519-df8f-0af4-1995">
+              <costs><cost name="pts" typeId="points" value="25"/></costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions><condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks><entryLink import="true" name="Magic Standards" hidden="false" id="aa10-1999-3101-1203" type="selectionEntryGroup" targetId="e80a-27cb-41ba-a274"/></entryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="20. Primary Weapon" hidden="false" id="aa10-1999-3101-1204" type="selectionEntryGroup" targetId="350c-4b0b-93c1-4e47">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="aa10-1999-3101-1205" type="selectionEntry" targetId="a658-337d-0cbd-a38c" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Lance" hidden="false" id="aa10-1999-3101-1206" type="selectionEntry" targetId="0548-4aeb-a60c-b378" sortIndex="2">
+              <costs><cost name="pts" typeId="points" value="10"/></costs>
+            </entryLink>
+            <entryLink import="true" name="Polearm/Halberd" hidden="false" id="aa10-1999-3101-1207" type="selectionEntry" targetId="757a-ff3d-710c-2d8b" sortIndex="3">
+              <costs><cost name="pts" typeId="points" value="10"/></costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"><conditions><condition type="notInstanceOf" value="1" field="selections" scope="model" childId="22c9-1606-58f8-2e60" shared="true"/></conditions></modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Great Weapon" hidden="false" id="aa10-1999-3101-1208" type="selectionEntry" targetId="0473-857e-78d9-cb7c" sortIndex="4">
+              <costs><cost name="pts" typeId="points" value="15"/></costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="15. Vows" hidden="false" id="aa10-1999-3101-1209" type="selectionEntryGroup" targetId="8d94-23ac-6a23-d05f">
+          <entryLinks>
+            <entryLink import="true" name="The Knight&apos;s Vow" hidden="false" id="aa10-1999-3101-1210" type="selectionEntry" targetId="bfad-27b6-00e4-fe10" sortIndex="1"/>
+            <entryLink import="true" name="The Crusader&apos;s Vow" hidden="false" id="aa10-1999-3101-1211" type="selectionEntry" targetId="b9c7-1e59-a035-7647" sortIndex="2">
+              <costs><cost name="pts" typeId="points" value="5"/></costs>
+            </entryLink>
+            <entryLink import="true" name="The Questing Vow" hidden="false" id="aa10-1999-3101-1212" type="selectionEntry" targetId="94fa-c4db-0cac-08b9" sortIndex="3">
+              <costs><cost name="pts" typeId="points" value="5"/></costs>
+            </entryLink>
+            <entryLink import="true" name="The Grail Vow" hidden="false" id="aa10-1999-3101-1213" type="selectionEntry" targetId="b582-d52e-24b6-5430" sortIndex="4">
+              <costs><cost name="pts" typeId="points" value="45"/></costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="40. Suits of Armour" hidden="false" id="aa10-1999-3101-1214" type="selectionEntryGroup" targetId="f7f7-2534-4683-595a">
+          <entryLinks><entryLink import="true" name="Heavy Armour" hidden="false" id="aa10-1999-3101-1215" type="selectionEntry" targetId="30e0-7325-ea6b-af97"><costs><cost name="pts" typeId="points" value="18"/></costs><modifiers><modifier type="set" value="1" field="2a65-3a21-af86-6ae3"><conditions><condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="9a61-618b-519a-807c" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers></entryLink></entryLinks>
+        </entryLink>
+        <entryLink import="true" name="50. Handheld Armour" hidden="false" id="aa10-1999-3101-1216" type="selectionEntryGroup" targetId="0420-92ca-bbfc-b5f2">
+          <entryLinks><entryLink import="true" name="Shield" hidden="false" id="aa10-1999-3101-1217" type="selectionEntry" targetId="c068-0827-9931-d9bf"><costs><cost name="pts" typeId="points" value="5"/></costs></entryLink></entryLinks>
+        </entryLink>
+        <entryLink import="true" name="70. Mount" hidden="false" id="aa10-1999-3101-1218" type="selectionEntryGroup" targetId="d3f4-2566-96e2-e425">
+          <entryLinks>
+            <entryLink import="true" name="Purebred Warhorse" hidden="false" id="aa10-1999-3101-1219" type="selectionEntry" targetId="1497-3d1c-9283-c24d" sortIndex="1">
+              <costs><cost name="pts" typeId="points" value="15"/></costs>
+              <entryLinks><entryLink import="true" name="Barding" hidden="false" id="aa10-1999-3101-1220" type="selectionEntry" targetId="17ec-ae05-605b-27ce"><costs><cost name="pts" typeId="points" value="5"/></costs></entryLink></entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Pegasus" hidden="false" id="aa10-1999-3101-1221" type="selectionEntry" targetId="23a2-2a59-0ef7-c5e1" sortIndex="2"><costs><cost name="pts" typeId="points" value="25"/></costs></entryLink>
+            <entryLink import="true" name="Royal Pegasus" hidden="false" id="aa10-1999-3101-1222" type="selectionEntry" targetId="5a9c-bbea-1735-6ce2" sortIndex="3"><costs><cost name="pts" typeId="points" value="40"/></costs></entryLink>
+            <entryLink import="true" name="Royal Hippogryph" hidden="false" id="aa10-1999-3101-1223" type="selectionEntry" targetId="5453-67eb-7d24-83f5" sortIndex="4"><costs><cost name="pts" typeId="points" value="150"/></costs><modifiers><modifier type="set" value="true" field="hidden"><conditions><condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers></entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="80. Magic Items &amp; Virtues of the Chivalric Knight" hidden="false" id="aa10-1999-3101-1224" type="selectionEntryGroup" targetId="1e11-0f79-86bc-f8dd">
+          <modifiers>
+            <modifier type="increment" value="100" field="09e5-ca06-96a0-d3ea"><conditions><condition type="atLeast" value="1" field="selections" scope="model" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier>
+            <modifier type="set" value="50" field="09e5-ca06-96a0-d3ea"><conditions><condition type="atLeast" value="1" field="selections" scope="model" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions></modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="2729-f578-03de-c013" name="Baron" hidden="false" collective="false" import="true" type="model" sortIndex="1">
       <profiles>
         <profile id="a471-1624-a4fd-b995" name="Baron" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -36,8 +174,7 @@
         <infoLink name="The Blessing of the Lady" id="ffa1-abea-e316-0fdc" hidden="false" type="profile" targetId="3bc4-c71a-60d2-31c9"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c423-9c09-b093-37e1" name="Lords" hidden="false" targetId="d280-b7df-c185-2ba5" primary="true"/>
-        <categoryLink id="fd34-6bf1-0c2e-9e58" name="Characters" hidden="false" targetId="d38a-73da-883b-bab9" primary="false"/>
+        <categoryLink id="fd34-6bf1-0c2e-9e58" name="Characters" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
         <categoryLink name="X Great Weapon" hidden="false" id="4ad5-6340-82f4-a1a3" targetId="abcc-4aa7-4989-7189" primary="false"/>
         <categoryLink name="X Heavy Lance" hidden="false" id="d85b-f33a-8fab-4afe" targetId="b906-254a-7949-9e08" primary="false"/>
         <categoryLink name="X Polearm" hidden="false" id="4c4a-6030-709d-e19c" targetId="0b0c-acf4-8a6a-dd72" primary="false"/>
@@ -4465,7 +4602,8 @@ During the game, the Green Knight may disappear at will and reappear in another 
                         </profile>
                         <profile name="The Grail Chorale" typeId="db89-f4f2-ce9b-6507" typeName="Valourous Ballads" hidden="false" id="20d5-4ded-8fe1-7ac9">
                           <characteristics>
-                            <characteristic name="Effect" typeId="38d0-820d-c4e6-de45">The Ward save from the Blessing of the Lady is increased by +1 for Tristan and any unit he has joined this turn.</characteristic>
+                            <characteristic name="Effect" typeId="38d0-820d-c4e6-de45"> The Magical Ward save from the Blessing of the Lady is increased by +1 for Tristan 
+and any unit he has joined this turn.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -8842,7 +8980,12 @@ On a turn that a unit in Lance Formation makes a successful charge, all models 
       <description>Models with the Peasant&apos;s Duty treat all friendly models with a Chivalrous Vow as having the Inspiring Presence (6) special rule. In addition, unit standards in units with the Peasant’s Duty do not confer any additional victory points if captured. Characters with the Peasant&apos;s Duty may not join units that have a Chivalrous Vow.</description>
     </rule>
     <rule id="2755-8cce-9b25-0cf5" name="The Blessing of the Lady" hidden="false">
-      <description>Models with this special rule have a 6+ Ward save. This is increased to a 5+ Ward save against missile attacks. Models with the Grail Vow always have a 5+ Ward save. Models with the Blessing of the Lady will lose it if they flee for any reason or refuse a challenge.</description>
+      <description>Models with this special rule have the Magical Ward 
+                  (6+) special rule. This is increased to Magical Ward 
+                  (5+) against missile attacks. Models with the Grail Vow 
+                  always have a Magical Ward (5+). Models with the 
+                  Blessing of the Lady will lose it if they flee for any 
+                  reason or refuse a challenge. </description>
     </rule>
     <rule id="0c26-35bd-c83f-fc57" name="Aura of the Lady" hidden="false">
       <description>Damsels have Magic Resistance (1), and Prophetesses Magic Resistance (2).</description>
