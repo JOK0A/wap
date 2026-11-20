@@ -3152,6 +3152,7 @@ Grail Reliquae follow all the rules for Shrines. Only once all the Grail Pilgrim
         <selectionEntry id="9f8e-d82c-f8a9-9f83" name="Man-at-Arms" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a46-3806-6660-2f9c" type="min"/>
+            <constraint field="selections" scope="parent" value="45" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="men-at-arms-max-45" type="max"/>
           </constraints>
           <profiles>
             <profile id="7906-0b4c-ce99-f778" name="Man-at-Arms" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -3173,7 +3174,7 @@ Grail Reliquae follow all the rules for Shrines. Only once all the Grail Pilgrim
             <infoLink id="b16e-ba69-8d36-5862" name="The Peasant&apos;s Duty" hidden="false" targetId="22b7-cc0d-1805-d244" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="4"/>
+            <cost name="pts" typeId="points" value="3"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="20. Primary Weapon" hidden="false" id="74c9-b6fb-bb39-9518" type="selectionEntryGroup" targetId="350c-4b0b-93c1-4e47">
