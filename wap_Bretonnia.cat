@@ -157,6 +157,7 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
+    <!-- Legacy standalone entry removed: Baron
     <selectionEntry id="2729-f578-03de-c013" name="Baron" hidden="true" collective="false" import="true" type="model" sortIndex="1">
       <profiles>
         <profile id="a471-1624-a4fd-b995" name="Baron" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -295,6 +296,7 @@
         <cost name="pts" typeId="points" value="110"/>
       </costs>
     </selectionEntry>
+    -->
     <selectionEntry id="ab10-1999-3101-1001" name="Handmaidens of the Lady" hidden="false" collective="false" import="true" type="model" sortIndex="2">
       <infoLinks>
         <infoLink id="ab10-1999-3101-1002" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
@@ -431,6 +433,7 @@
       </entryLinks>
       <costs><cost name="pts" typeId="points" value="0"/></costs>
     </selectionEntry>
+    <!-- Legacy standalone entry removed: Prophetess
     <selectionEntry id="626a-dfbc-1055-ba8f" name="Prophetess" hidden="true" collective="false" import="true" type="model" sortIndex="2">
       <profiles>
         <profile id="f4c3-0d03-be1b-8286" name="Prophetess of the Lady" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -534,6 +537,8 @@
         <cost name="pts" typeId="points" value="165"/>
       </costs>
     </selectionEntry>
+    -->
+    <!-- Legacy standalone entry removed: Paladin
     <selectionEntry id="435e-f593-3b48-af1d" name="Paladin" hidden="true" collective="false" import="true" type="model" sortIndex="3">
       <profiles>
         <profile id="d92e-f334-644d-8b3a" name="Paladin" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -690,6 +695,8 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    -->
+    <!-- Legacy standalone entry removed: Grail Damsel
     <selectionEntry id="c3a3-0f04-a3ba-64b7" name="Grail Damsel" hidden="true" collective="false" import="true" type="model" sortIndex="4">
       <profiles>
         <profile id="f5d1-08ba-d48b-b712" name="Grail Damsel" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -787,6 +794,7 @@
         <cost name="pts" typeId="points" value="80"/>
       </costs>
     </selectionEntry>
+    -->
     <selectionEntry id="c3d2-b64a-ddb4-9b37" name="Faceless" hidden="false" collective="false" import="true" type="model" sortIndex="6">
       <profiles>
         <profile id="6e9f-b04a-9faf-dbb0" name="Faceless" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -7596,8 +7604,8 @@ and any unit he has joined this turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="435e-f593-3b48-af1d" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="2729-f578-03de-c013" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7736,8 +7744,8 @@ and any unit he has joined this turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="435e-f593-3b48-af1d" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="2729-f578-03de-c013" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8788,7 +8796,7 @@ and any unit he has joined this turn.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="2729-f578-03de-c013" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8874,8 +8882,8 @@ and any unit he has joined this turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="435e-f593-3b48-af1d" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="2729-f578-03de-c013" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
