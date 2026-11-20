@@ -1094,6 +1094,7 @@
         <selectionEntry id="a1db-f918-f001-d1a1" name="Knight of the Realm" hidden="false" collective="false" import="true" type="model" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d71c-c533-4f6f-b131" type="min"/>
+            <constraint field="selections" scope="parent" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="realm-max-15" type="max"/>
           </constraints>
           <profiles>
             <profile id="c37d-a874-3de9-b647" name="Knight of the Realm" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
@@ -1117,7 +1118,7 @@
             <infoLink name="The Blessing of the Lady" id="7960-b356-4ab8-c55a" hidden="false" type="profile" targetId="3bc4-c71a-60d2-31c9"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25"/>
+            <cost name="pts" typeId="points" value="23"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="15. Vows" hidden="false" id="67a2-f77b-2dea-ac6b" type="selectionEntryGroup" targetId="8d94-23ac-6a23-d05f">
