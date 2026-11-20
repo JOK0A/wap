@@ -37,7 +37,10 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a7e4-e124-fd5c-1d40"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="aa10-1999-3101-1101" name="Baron" hidden="false" collective="false" import="true" type="model" sortIndex="1">
+            <selectionEntry id="aa10-1999-3101-1101" name="Baron" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="Baron" field="name"/>
+              </modifiers>
               <profiles>
                 <profile id="aa10-1999-3101-1102" name="Baron" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model" noindex="true">
                   <characteristics>
@@ -56,7 +59,10 @@
               </profiles>
               <costs><cost name="pts" typeId="points" value="100"/></costs>
             </selectionEntry>
-            <selectionEntry id="aa10-1999-3101-1103" name="Paladin" hidden="false" collective="false" import="true" type="model" sortIndex="2">
+            <selectionEntry id="aa10-1999-3101-1103" name="Paladin" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="Paladin" field="name"/>
+              </modifiers>
               <profiles>
                 <profile id="aa10-1999-3101-1104" name="Paladin" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model" noindex="true">
                   <characteristics>
@@ -85,7 +91,7 @@
               <costs><cost name="pts" typeId="points" value="25"/></costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions><condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions>
+                  <conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions>
                 </modifier>
               </modifiers>
               <entryLinks><entryLink import="true" name="Magic Standards" hidden="false" id="aa10-1999-3101-1203" type="selectionEntryGroup" targetId="e80a-27cb-41ba-a274"/></entryLinks>
@@ -124,7 +130,7 @@
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="40. Suits of Armour" hidden="false" id="aa10-1999-3101-1214" type="selectionEntryGroup" targetId="f7f7-2534-4683-595a">
-          <entryLinks><entryLink import="true" name="Heavy Armour" hidden="false" id="aa10-1999-3101-1215" type="selectionEntry" targetId="30e0-7325-ea6b-af97"><costs><cost name="pts" typeId="points" value="18"/></costs><modifiers><modifier type="set" value="1" field="2a65-3a21-af86-6ae3"><conditions><condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="9a61-618b-519a-807c" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers></entryLink></entryLinks>
+          <entryLinks><entryLink import="true" name="Heavy Armour" hidden="false" id="aa10-1999-3101-1215" type="selectionEntry" targetId="30e0-7325-ea6b-af97"><costs><cost name="pts" typeId="points" value="18"/></costs></entryLink></entryLinks>
         </entryLink>
         <entryLink import="true" name="50. Handheld Armour" hidden="false" id="aa10-1999-3101-1216" type="selectionEntryGroup" targetId="0420-92ca-bbfc-b5f2">
           <entryLinks><entryLink import="true" name="Shield" hidden="false" id="aa10-1999-3101-1217" type="selectionEntry" targetId="c068-0827-9931-d9bf"><costs><cost name="pts" typeId="points" value="5"/></costs></entryLink></entryLinks>
@@ -137,13 +143,13 @@
             </entryLink>
             <entryLink import="true" name="Pegasus" hidden="false" id="aa10-1999-3101-1221" type="selectionEntry" targetId="23a2-2a59-0ef7-c5e1" sortIndex="2"><costs><cost name="pts" typeId="points" value="25"/></costs></entryLink>
             <entryLink import="true" name="Royal Pegasus" hidden="false" id="aa10-1999-3101-1222" type="selectionEntry" targetId="5a9c-bbea-1735-6ce2" sortIndex="3"><costs><cost name="pts" typeId="points" value="40"/></costs></entryLink>
-            <entryLink import="true" name="Royal Hippogryph" hidden="false" id="aa10-1999-3101-1223" type="selectionEntry" targetId="5453-67eb-7d24-83f5" sortIndex="4"><costs><cost name="pts" typeId="points" value="150"/></costs><modifiers><modifier type="set" value="true" field="hidden"><conditions><condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers></entryLink>
+            <entryLink import="true" name="Royal Hippogryph" hidden="false" id="aa10-1999-3101-1223" type="selectionEntry" targetId="5453-67eb-7d24-83f5" sortIndex="4"><costs><cost name="pts" typeId="points" value="150"/></costs><modifiers><modifier type="set" value="true" field="hidden"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers></entryLink>
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="80. Magic Items &amp; Virtues of the Chivalric Knight" hidden="false" id="aa10-1999-3101-1224" type="selectionEntryGroup" targetId="1e11-0f79-86bc-f8dd">
           <modifiers>
-            <modifier type="increment" value="100" field="09e5-ca06-96a0-d3ea"><conditions><condition type="atLeast" value="1" field="selections" scope="model" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier>
-            <modifier type="set" value="50" field="09e5-ca06-96a0-d3ea"><conditions><condition type="atLeast" value="1" field="selections" scope="model" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions></modifier>
+            <modifier type="increment" value="100" field="09e5-ca06-96a0-d3ea"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier>
+            <modifier type="set" value="50" field="09e5-ca06-96a0-d3ea"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="aa10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions></modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -151,7 +157,7 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2729-f578-03de-c013" name="Baron" hidden="false" collective="false" import="true" type="model" sortIndex="1">
+    <selectionEntry id="2729-f578-03de-c013" name="Baron" hidden="true" collective="false" import="true" type="model" sortIndex="1">
       <profiles>
         <profile id="a471-1624-a4fd-b995" name="Baron" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -236,13 +242,6 @@
         <entryLink import="true" name="40. Suits of Armour" hidden="false" id="45d2-912d-49a2-93d0" type="selectionEntryGroup" targetId="f7f7-2534-4683-595a">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="f209-7ab3-de12-fafd" type="selectionEntry" targetId="30e0-7325-ea6b-af97">
-              <modifiers>
-                <modifier type="set" value="1" field="2a65-3a21-af86-6ae3">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="9a61-618b-519a-807c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </entryLink>
           </entryLinks>
         </entryLink>
@@ -296,7 +295,143 @@
         <cost name="pts" typeId="points" value="110"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="626a-dfbc-1055-ba8f" name="Prophetess" hidden="false" collective="false" import="true" type="model" sortIndex="2">
+    <selectionEntry id="ab10-1999-3101-1001" name="Handmaidens of the Lady" hidden="false" collective="false" import="true" type="model" sortIndex="2">
+      <infoLinks>
+        <infoLink id="ab10-1999-3101-1002" name="The Blessing of the Lady" hidden="false" targetId="2755-8cce-9b25-0cf5" type="rule"/>
+        <infoLink id="ab10-1999-3101-1003" name="The Blessing of the Lady" hidden="false" type="profile" targetId="3bc4-c71a-60d2-31c9"/>
+        <infoLink id="ab10-1999-3101-1004" name="Magic Resistance" hidden="false" type="profile" targetId="dfc2-ea60-0f92-be07">
+          <modifiers>
+            <modifier type="set" value="Handmaiden" field="name"/>
+            <modifier type="set" value="1" field="19f0-e982-f035-416c"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ab10-1999-3101-1005" name="Magic Resistance" hidden="false" type="profile" targetId="d51b-e3da-4ab4-6b26">
+          <modifiers>
+            <modifier type="set" value="Handmaiden" field="name"/>
+            <modifier type="set" value="6+" field="bdf9-d73e-e13b-b0ce"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ab10-1999-3101-1006" name="Characters" hidden="false" targetId="d38a-73da-883b-bab9" primary="true"/>
+        <categoryLink id="ab10-1999-3101-1007" name="Wizard" hidden="false" targetId="1aae-2529-c509-7573" primary="false"/>
+        <categoryLink id="ab10-1999-3101-1008" name="Infantry" hidden="false" targetId="22c9-1606-58f8-2e60" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ab10-1999-3101-1009" name="5. Character Selection" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ab10-1999-3101-1010"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ab10-1999-3101-1011"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ab10-1999-3101-1101" name="Prophetess" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="Prophetess" field="name"/>
+              </modifiers>
+              <profiles>
+                <profile id="ab10-1999-3101-1102" name="Prophetess" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model" noindex="true">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">4</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">3</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">4</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">2</characteristic>
+                    <characteristic name="Ld" typeId="a199-f10b-a038-5730">8</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character, Human)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs><cost name="pts" typeId="points" value="170"/></costs>
+            </selectionEntry>
+            <selectionEntry id="ab10-1999-3101-1103" name="Grail Damsel" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="Grail Damsel" field="name"/>
+              </modifiers>
+              <profiles>
+                <profile id="ab10-1999-3101-1104" name="Grail Damsel" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model" noindex="true">
+                  <characteristics>
+                    <characteristic name="M" typeId="09ad-18df-607b-1215">4</characteristic>
+                    <characteristic name="WS" typeId="f049-8a65-9c04-1559">3</characteristic>
+                    <characteristic name="BS" typeId="7b67-9dfa-eeac-d007">3</characteristic>
+                    <characteristic name="S" typeId="edd2-7979-54a4-6b35">3</characteristic>
+                    <characteristic name="T" typeId="df90-5cbd-8cf9-95b2">3</characteristic>
+                    <characteristic name="W" typeId="27ee-0675-122f-a1b1">2</characteristic>
+                    <characteristic name="I" typeId="7cca-e51f-edc2-7322">3</characteristic>
+                    <characteristic name="A" typeId="bfa2-d38d-7c93-d3f0">1</characteristic>
+                    <characteristic name="Ld" typeId="a199-f10b-a038-5730">7</characteristic>
+                    <characteristic name="Type" typeId="13f9-a26b-05af-3459">Infantry (Character, Human)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs><cost name="pts" typeId="points" value="75"/></costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="65. Lores of Magic" id="ab10-1999-3101-1201" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab10-1999-3101-1202"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab10-1999-3101-1203"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lore of Life" hidden="false" id="ab10-1999-3101-1204" type="selectionEntry" targetId="968d-55ad-604c-f251"/>
+            <entryLink import="true" name="Lore of Light" hidden="false" id="ab10-1999-3101-1205" type="selectionEntry" targetId="c543-a893-3879-cf32"/>
+            <entryLink import="true" name="Lore of the Lady" hidden="false" id="ab10-1999-3101-1206" type="selectionEntry" targetId="3185-2b53-91b7-d148"/>
+            <entryLink import="true" name="Lore of Beasts" hidden="false" id="ab10-1999-3101-1207" type="selectionEntry" targetId="b436-b410-dd41-304f"/>
+            <entryLink import="true" name="Lore of Heavens" hidden="false" id="ab10-1999-3101-1208" type="selectionEntry" targetId="e64b-e6a1-58ba-0aee"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="10. Character Options" hidden="false" id="ab10-1999-3101-1301" type="selectionEntryGroup" targetId="35f1-2fc8-9817-3171"/>
+        <entryLink import="true" name="20. Primary Weapon" hidden="false" id="ab10-1999-3101-1302" type="selectionEntryGroup" targetId="350c-4b0b-93c1-4e47">
+          <entryLinks>
+            <entryLink import="true" name="Hand Weapon" hidden="false" id="ab10-1999-3101-1303" type="selectionEntry" targetId="a658-337d-0cbd-a38c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab10-1999-3101-1304"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="60. Wizard Level 1 &amp; 2" hidden="false" id="ab10-1999-3101-1305" type="selectionEntryGroup" targetId="6921-bd2a-e7cb-9029">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="ab10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions></modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="60. Wizard Level 3 &amp; 4" hidden="false" id="ab10-1999-3101-1306" type="selectionEntryGroup" targetId="d1c2-3512-e5b6-7616">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="ab10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="70. Mount" hidden="false" id="ab10-1999-3101-1307" type="selectionEntryGroup" targetId="d3f4-2566-96e2-e425">
+          <entryLinks>
+            <entryLink import="true" name="Warhorse" hidden="false" id="ab10-1999-3101-1308" type="selectionEntry" targetId="1497-3d1c-9283-c24d" sortIndex="1">
+              <costs><cost name="pts" typeId="points" value="15"/></costs>
+              <modifiers><modifier type="set" value="Warhorse" field="name"/></modifiers>
+            </entryLink>
+            <entryLink import="true" name="Pegasus" hidden="false" id="ab10-1999-3101-1309" type="selectionEntry" targetId="23a2-2a59-0ef7-c5e1" sortIndex="2">
+              <costs><cost name="pts" typeId="points" value="25"/></costs>
+            </entryLink>
+            <entryLink import="true" name="Unicorn" hidden="false" id="ab10-1999-3101-1310" type="selectionEntry" targetId="1173-189a-7606-0c37" sortIndex="3">
+              <costs><cost name="pts" typeId="points" value="25"/></costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden"><conditions><condition type="lessThan" value="1" field="selections" scope="root-entry" childId="ab10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="80. Magic Items" hidden="false" id="ab10-1999-3101-1311" type="selectionEntryGroup" targetId="6fdf-b151-bfc8-df82">
+          <modifiers>
+            <modifier type="set" value="100" field="f6ef-d9ff-1300-664c"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="ab10-1999-3101-1101" shared="true" includeChildSelections="true"/></conditions></modifier>
+            <modifier type="set" value="50" field="f6ef-d9ff-1300-664c"><conditions><condition type="atLeast" value="1" field="selections" scope="root-entry" childId="ab10-1999-3101-1103" shared="true" includeChildSelections="true"/></conditions></modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs><cost name="pts" typeId="points" value="0"/></costs>
+    </selectionEntry>
+    <selectionEntry id="626a-dfbc-1055-ba8f" name="Prophetess" hidden="true" collective="false" import="true" type="model" sortIndex="2">
       <profiles>
         <profile id="f4c3-0d03-be1b-8286" name="Prophetess of the Lady" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -399,7 +534,7 @@
         <cost name="pts" typeId="points" value="165"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="435e-f593-3b48-af1d" name="Paladin" hidden="false" collective="false" import="true" type="model" sortIndex="3">
+    <selectionEntry id="435e-f593-3b48-af1d" name="Paladin" hidden="true" collective="false" import="true" type="model" sortIndex="3">
       <profiles>
         <profile id="d92e-f334-644d-8b3a" name="Paladin" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
@@ -501,13 +636,6 @@
         <entryLink import="true" name="40. Suits of Armour" hidden="false" id="a26c-d095-df3d-bd69" type="selectionEntryGroup" targetId="f7f7-2534-4683-595a">
           <entryLinks>
             <entryLink import="true" name="Heavy Armour" hidden="false" id="e9fc-4d00-70f5-679f" type="selectionEntry" targetId="30e0-7325-ea6b-af97">
-              <modifiers>
-                <modifier type="set" value="1" field="2a65-3a21-af86-6ae3">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="9a61-618b-519a-807c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </entryLink>
           </entryLinks>
         </entryLink>
@@ -562,7 +690,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry id="c3a3-0f04-a3ba-64b7" name="Grail Damsel" hidden="false" collective="false" import="true" type="model" sortIndex="4">
+    <selectionEntry id="c3a3-0f04-a3ba-64b7" name="Grail Damsel" hidden="true" collective="false" import="true" type="model" sortIndex="4">
       <profiles>
         <profile id="f5d1-08ba-d48b-b712" name="Grail Damsel" hidden="false" typeId="d9ed-a507-0102-d498" typeName="Model">
           <characteristics>
